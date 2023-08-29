@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(void){
+
     cout << "'0' = " << "DEC: " << int('0') << oct <<  " - OCT: " <<  int('0') << hex <<  " - HEX: "  <<  int('0') << endl;
     cout << "'1' = " << "DEC: " << int('1') << oct <<  " - OCT: " <<  int('1') << hex <<  " - HEX: "  <<  int('1') << endl;
     cout << "'2' = " << "DEC: " << int('2') << oct <<  " - OCT: " <<  int('2') << hex <<  " - HEX: "  <<  int('2') << endl;
@@ -15,6 +16,5 @@ int main(void){
     cout << "Digite um caracter:"<<endl;
     cin >> caracter;
     cout << caracter<<" = " << "DEC: " << int(caracter) << oct <<  " - OCT: " <<  int(caracter) << hex <<  " - HEX: "  <<  int(caracter) << endl;
-    return 0;
     return 0;
 }
