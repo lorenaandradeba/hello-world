@@ -20,16 +20,16 @@ Como modificar o comportamento do cout para imprimir um objeto de tipo char como
 /*b. Modifique o exercício anterior para que a saída imprima também
 o código numérico em octal e em hexadecimal.*/
     cout <<"b)"<<endl;
-    cout << "'0' = " << "Decimal: " << int('0') << oct <<  " - Octal: " <<  int('0') << hex <<  " - Hexadecimal: "  <<  int('0') << endl;
-    cout << "'1' = " << "Decimal: " << int('1') << oct <<  " - Octal: " <<  int('1') << hex <<  " - Hexadecimal: "  <<  int('1') << endl;
-    cout << "'2' = " << "Decimal: " << int('2') << oct <<  " - Octal: " <<  int('2') << hex <<  " - Hexadecimal: "  <<  int('2') << endl;
-    cout << "'3' = " << "Decimal: " << int('3') << oct <<  " - Octal: " <<  int('3') << hex <<  " - Hexadecimal: "  <<  int('3') << endl;
-    cout << "'4' = " << "Decimal: " << int('4') << oct <<  " - Octal: " <<  int('4') << hex <<  " - Hexadecimal: "  <<  int('4') << endl;
-    cout << "'5' = " << "Decimal: " << int('5') << oct <<  " - Octal: " <<  int('5') << hex <<  " - Hexadecimal: "  <<  int('5') << endl;
-    cout << "'6' = " << "Decimal: " << int('6') << oct <<  " - Octal: " <<  int('6') << hex <<  " - Hexadecimal: "  <<  int('6') << endl;
-    cout << "'7' = " << "Decimal: " << int('7') << oct <<  " - Octal: " <<  int('7') << hex <<  " - Hexadecimal: "  <<  int('7') << endl;
-    cout << "'8' = " << "Decimal: " << int('8') << oct <<  " - Octal: " <<  int('8') << hex <<  " - Hexadecimal: "  <<  int('8') << endl;
-    cout << "'9' = " << "Decimal: " << int('9') << oct <<  " - Octal: " <<  int('9') << hex <<  " - Hexadecimal: "  <<  int('9') << endl << endl;
+    cout << "'0' = " << "Decimal: " << dec << int('0') << " - Octal: " << oct <<  int('0') <<  " - Hexadecimal: "  << hex <<  int('0') << endl;
+    cout << "'1' = " << "Decimal: " << dec << int('1') << " - Octal: " << oct <<  int('1') <<  " - Hexadecimal: "  << hex <<  int('1') << endl;
+    cout << "'2' = " << "Decimal: " << dec << int('2') << " - Octal: " << oct <<  int('2') <<  " - Hexadecimal: "  << hex <<  int('2') << endl;
+    cout << "'3' = " << "Decimal: " << dec << int('3') << " - Octal: " << oct <<  int('3') <<  " - Hexadecimal: "  << hex <<  int('3') << endl;
+    cout << "'4' = " << "Decimal: " << dec << int('4') << " - Octal: " << oct <<  int('4') <<  " - Hexadecimal: "  << hex <<  int('4') << endl;
+    cout << "'5' = " << "Decimal: " << dec << int('5') << " - Octal: " << oct <<  int('5') <<  " - Hexadecimal: "  << hex <<  int('5') << endl;
+    cout << "'6' = " << "Decimal: " << dec << int('6') << " - Octal: " << oct <<  int('6') <<  " - Hexadecimal: "  << hex <<  int('6') << endl;
+    cout << "'7' = " << "Decimal: " << dec << int('7') << " - Octal: " << oct <<  int('7') <<  " - Hexadecimal: "  << hex <<  int('7') << endl;
+    cout << "'8' = " << "Decimal: " << dec << int('8') << " - Octal: " << oct <<  int('8') <<  " - Hexadecimal: "  << hex <<  int('8') << endl;
+    cout << "'9' = " << "Decimal: " << dec << int('9') << " - Octal: " << oct <<  int('9') <<  " - Hexadecimal: "  << hex <<  int('9') << endl << endl;
 
 /*c. Acrescente ao código do exercício anterior a possibilidade de ler um
 caractere qualquer e imprima no mesmo formato do inciso anterior.*/
@@ -39,9 +39,9 @@ caractere qualquer e imprima no mesmo formato do inciso anterior.*/
     cout << "Digite um caracter: ";
     cin >> caracter;
     cout << caracter<<" = "
-    << "Decimal: " << int(caracter)
-    << oct <<  " - Octal: " <<  int(caracter) 
-    << hex <<  " - Hexadecimal: " <<  int(caracter) << endl << endl;
+    << "Decimal: " << dec << int(caracter)
+    <<  " - Octal: " << oct <<  int(caracter) 
+    <<  " - Hexadecimal: "<< hex <<  int(caracter) << endl << endl;
 
 /*d. Pesquise como fazer para armazenar uma variável os caracteres
 especiais ‘ç’ e ‘ã’. Acrescente no código do exercício anterior um
@@ -49,7 +49,13 @@ exemplo que demonstra como usar este recurso.*/
     cout <<"d)"<<endl;
     char cedilha = 135;
     char till = 198;
-    cout << "'"<< cedilha << "' = " << "Decimal: " << int(cedilha) << oct <<  " - Octal: " <<  int(cedilha) << hex <<  " - Hexadecimal: "  <<  int(cedilha) << endl;
-    cout << "'"<< till << "' = " << "Decimal: " << int(till) << oct <<  " - Octal: " <<  int(till) << hex <<  " - Hexadecimal: "  <<  int(till) << endl;
+    cout << "'"<< cedilha << "' = " 
+    << "Decimal: " << int(cedilha)
+    <<  " - Octal: " << oct <<  int(cedilha)
+    <<  " - Hexadecimal: " << hex <<  int(cedilha) << endl;
+    cout << "'"<< till << "' = "
+    << "Decimal: " << hex << int(till)
+    <<  " - Octal: " << oct <<  int(till) 
+    <<  " - Hexadecimal: " << hex <<  int(till) << endl << endl;
     return 0;
     }
